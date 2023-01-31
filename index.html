@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <!-- zadej popis stranky -->
+    <meta name="keywords" content="responsive">
+    <!-- zadej klicova slova -->
+    <meta name="author" content="Miroslav Viktorin">
+    <!-- zadej jmeno autora -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body class="container">
+    <header>
+        <h1>Checkout</h1>
+    </header>
+
+    <main class="mainFlex">
+        <section class="form">
+            <form action="">
+                <h2>Contact information</h2>
+
+                <h3>E-mail</h3>
+                <input type="email" name="email" id="" placeholder="enter your email..." required class="email">
+
+                <h3>Phone</h3>
+                <input type="tel" name="tel" id="" required placeholder="enter your phone..." class="phone">
+
+                <h2 class="shipping">Shipping address</h2>
+
+                <h3>Full name</h3>
+                <input type="text" name="name" id="" placeholder="your name" required class="person">
+
+                <h3>Address</h3>
+                <input type="text" name="address" id="" placeholder="Your address.." required class="address">
+
+                <h3>City</h3>
+                <input type="text" name="city" id="" placeholder="Your city.." required class="city">
+
+                <div class="bottomFlex">
+                    <div>
+                        <h3>Country</h3>
+                        <select name="country" id="country-select" required class="globe">
+                            <option value="country">Your country..</option>
+                            <option value="Czech">Czech</option>
+                            <option value="Slovakia">Slovakia</option>
+                            <option value="Germany">Germany</option>
+                            <option value="Finland">Finland</option>
+                            <option value="Sweden">Sweden</option>
+                            <option value="Poland">Poland</option>
+                            <option value="Osteriech">Osteriech</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <h3>Postal code</h3>
+                        <input type="number" name="" id="" placeholder="your postal code.." required class="postal">
+                    </div>
+                </div>
+
+                <div class="bottomCheckbox">
+                    <input type="checkbox" name="ferda" id="">
+                    <h3 class="lastChild">Save the information for next time</h3>
+                </div>
+
+                <input type="submit" value="Continue" class="bttn" />
+
+            </form>
+        </section>
+
+        <section class="checkout">
+            <ul>
+                <li class="oneItem">
+                    <img src="./img/photo1.png" alt="shop item" width="135" height="136">
+                    <div class="inside-oneItem">
+                        <h4>Vintage Backbag</h4>
+                        <h4 class="price">$54.99</h4>
+                        <h5>$94.99</h5>
+                        <div class="incBttn">
+                            <h6 class="minus">-</h6>
+                            <h6>1</h6>
+                            <h6 class="plus">+</h6>
+                        </div>
+                    </div>
+                </li>
+
+
+                <li class="oneItem">
+                    <img src="/./img/photo2.png" alt="shop item" width="135" height="136">
+                    <div class="inside-oneItem">
+                        <h4>Levi shoes</h4>
+                        <h4 class="price">$74.99</h4>
+                        <h5>$124.99</h5>
+                        <div class="incBttn">
+                            <h6 class="minus">-</h6>
+                            <h6>1</h6>
+                            <h6 class="plus">+</h6>
+                        </div>
+                    </div>
+
+                </li>
+            </ul>
+
+            <ul class="pricing">
+                <li class="pricing-list">
+                    <h3>Shipping</h3>
+                    <h4 class="shipping">$19</h4>
+                </li>
+                <li class="pricing-list">
+                    <h3>Total</h3>
+                    <h4 class="total">$148.98</h4>
+                </li>
+            </ul>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>created by <span>Mirjax2000</span> - devChallenges.io </p>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
